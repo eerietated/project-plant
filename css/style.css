@@ -84,6 +84,11 @@ a {
   display: none;
 }
 
+main {
+  background-color: #ccc;
+  height: 719px;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 17px 100px;
