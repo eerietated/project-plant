@@ -43,6 +43,9 @@ a {
 .top-navbar .row .top-navbar-links .top-navbar-element p {
   display: none;
 }
+.top-navbar .row .top-navbar-links .top-navbar-element img {
+  width: 20px;
+}
 .top-navbar .row .drop-down {
   display: flex;
   gap: 5px;
@@ -54,6 +57,9 @@ a {
 .navbar .row {
   justify-content: space-between;
   align-items: center;
+}
+.navbar .row .logo a img {
+  width: 90px;
 }
 .navbar .row nav {
   display: flex;
@@ -91,7 +97,13 @@ main {
 
 @media (min-width: 768px) {
   .container {
-    padding: 17px 100px;
+    max-width: 1200px;
+  }
+  .top-navbar .row .top-navbar-links .top-navbar-element img {
+    width: 25px;
+  }
+  .navbar .row .logo a img {
+    width: 120px;
   }
   .navbar .row nav .menu-btn .call-btn {
     border-radius: 5px;
@@ -111,7 +123,7 @@ main {
 }
 @media (min-width: 1410px) {
   .container {
-    padding: 17px 200px;
+    max-width: 1400px;
   }
   .top-navbar .row {
     margin: 0 0;

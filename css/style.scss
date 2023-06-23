@@ -44,6 +44,10 @@ a {
                 p {
                     display: none;
                 }
+
+                img {
+                    width: 20px;
+                }
             }
     
         }
@@ -65,6 +69,14 @@ a {
     .row {
         justify-content: space-between;
         align-items: center;
+
+        .logo {
+            a {
+                img {
+                    width: 90px;
+                }
+            }
+        }
 
         nav {
             display: flex;
@@ -111,11 +123,30 @@ main {
 // ---------------------------TABLET---------------------------
 @media(min-width: 768px) {
     .container {
-        padding: 17px 100px;
+        max-width: 1200px;
+    }
+
+    .top-navbar {
+        .row {
+            .top-navbar-links {
+                .top-navbar-element {
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+        }
     }
 
     .navbar {
         .row {
+            .logo {
+                a {
+                    img {
+                        width: 120px;
+                    }
+                }
+            }
             nav {
                 .menu-btn {
                    
@@ -149,7 +180,7 @@ main {
 // ---------------------------DESKTOP---------------------------
 @media(min-width: 1410px) {
     .container {
-        padding: 17px 200px;
+        max-width: 1400px;
     }
 
     .top-navbar {
@@ -157,7 +188,6 @@ main {
             margin: 0 0;
     
             .top-navbar-links {
-    
                 .top-navbar-element {
     
                     p {
@@ -167,7 +197,6 @@ main {
             }
 
             .drop-down {
-
                 img {
                     width: 12px;
                 }
@@ -192,7 +221,6 @@ main {
                     gap: 40px;
                     
                     .menu-item {
-
                         .menu-green-link {
                             color: #00730C;
                         }
