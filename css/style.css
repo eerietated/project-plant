@@ -49,6 +49,7 @@ a {
 .top-navbar .row .drop-down {
   display: flex;
   gap: 5px;
+  color: #fff;
 }
 .top-navbar .row .drop-down img {
   width: 7px;
