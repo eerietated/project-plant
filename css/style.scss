@@ -4,13 +4,24 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
 }
 
 a {
     text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+h1 {
+    font-size: 28px;
+
+    span {
+        color: #00730C;
+    }
 }
 
 .container {
@@ -22,6 +33,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin: 0 20px;
+    color: #212529;
+    font-family: "Nunito", sans-serif;
 }
 
 // ---------------------------TOP-NAVBAR---------------------------
@@ -147,8 +160,6 @@ a {
     
     .row {
         flex-direction: column;
-        color: #212529;
-        font-family: "Nunito", sans-serif;
         line-height: 40px;
         gap: 40px;
         margin-bottom: 35px;
@@ -164,14 +175,6 @@ a {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        
-        h1 {
-            font-size: 28px;
-
-            span {
-                color: #00730C;
-            }
-        }
 
         .hero-top-text {
             display: flex;
@@ -246,6 +249,113 @@ a {
     }
 }
 
+// ---------------------------SECTION-A---------------------------
+.section-a {
+    .container {
+        padding: 0;
+    }
+    .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-a-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        h1 {
+            text-transform: capitalize;
+        }
+        p {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+            color: #676767;
+        }
+    }
+
+    .section-a-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+
+        .section-a-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            background: linear-gradient(171deg, #FFF 0%, #FFF 100%);
+            box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+        }
+
+        .a-item-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            z-index: 2;
+            h3 {
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: capitalize;
+            }
+            p {
+                font-size: 14px;
+                line-height: 22px;
+                color: #676767;
+            }
+        }
+
+        .a-img-container {
+            z-index: 1;
+        }
+
+        .bg-a-img {
+            position: absolute;
+            left: 0;
+            background: url('../imgs/bg-img-a.svg') no-repeat center center/cover;
+            width: 112px;
+            height: 112px;
+            z-index: 0;
+        }
+
+        .a-img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .a-img-1 {
+            background: url('../imgs/Mobile-app/A-icon-1.svg') no-repeat center center/cover;
+        }
+        .a-img-2 {
+            background: url('../imgs/Mobile-app/A-icon-2.svg') no-repeat center center/cover;
+        }
+        .a-img-3 {
+            background: url('../imgs/Mobile-app/A-icon-3.svg') no-repeat center center/cover;
+        }
+        .a-img-4 {
+            background: url('../imgs/Mobile-app/A-icon-4.svg') no-repeat center center/cover;
+        }
+        .a-img-5 {
+            background: url('../imgs/Mobile-app/A-icon-5.svg') no-repeat center center/cover;
+        }
+        .a-img-6 {
+            background: url('../imgs/Mobile-app/A-icon-6.svg') no-repeat center center/cover;
+        }
+        .a-img-7 {
+            background: url('../imgs/Mobile-app/A-icon-7.svg') no-repeat center center/cover;
+        }
+        .a-img-8 {
+            background: url('../imgs/Mobile-app/A-icon-8.svg') no-repeat center center/cover;
+        }
+    }
+}
 
 // ---------------------------TABLET---------------------------
 @media(min-width: 768px) {
@@ -394,12 +504,91 @@ a {
             }
         }
     }
+
+    // ---------------------------SECTION-A---------------------------
+    .section-a {
+        .row {
+            gap: 50px;
+        }
+    
+        .section-a-head {
+            gap: 30px;
+            h1 {
+                font-size: 45px;
+                font-weight: 800;
+            }
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                width: 85%;
+            }
+        }
+    
+        .section-a-content {
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+    
+            .section-a-item {
+                flex-direction: column;
+                width: 40%;
+                gap: 50px;
+                padding: 60px 40px;
+                align-items: center;
+            }
+
+            .section-a-item-1 {
+                background: #00730C;
+                color: #FFF;
+
+                p {
+                    color: #FFF;
+                }
+            }
+    
+            .a-item-text {
+                align-items: center;
+                h3 {
+                    font-size: 24px;
+                }
+                p {
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+
+            .bg-a-img {
+                top: 0;
+                left: auto;
+                width: 176px;
+                height: 176px;
+            }
+
+            .bg-a-img-1 {
+                opacity: 0.2;
+            }
+    
+            .a-img {
+                width: 70px;
+                height: 70px;
+            }
+    
+            .a-img-1 {
+                background: url('../imgs/Desktop-app/A-icon-1-white.svg') no-repeat center;
+            }
+        }
+    }
 }
 
 
 
 // ---------------------------DESKTOP---------------------------
 @media(min-width: 1410px) {
+    main {
+        gap: 100px;
+    }
+    
     .container {
         max-width: 1400px;
     }
@@ -485,6 +674,14 @@ a {
             right: 0;
             bottom: 0;
             padding: 0;
+        }
+    }
+
+    .section-a {
+        .section-a-content {
+            .section-a-item {
+                width: 23%;
+            }
         }
     }
 }
