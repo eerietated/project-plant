@@ -32,7 +32,7 @@ h1 {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 20px;
+    margin: 0 15px;
     color: #212529;
     font-family: "Nunito", sans-serif;
 }
@@ -357,6 +357,151 @@ h1 {
     }
 }
 
+// ---------------------------SECTION-B---------------------------
+.section-b {
+    .container {
+        padding: 0;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .b-imgs-container {
+        position: relative;
+        width: 345px;
+        height: 462px;
+
+        .b-green-bg {
+            position: relative;
+            background-color: #00730C;
+            width: 188px;
+            height: 292px;
+            z-index: 0;
+        }
+        .b-main-img {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: url('../imgs/b-main-img.png') no-repeat center center/cover;
+            width: 291px;
+            height: 358px;
+            z-index: 1;
+        }
+        .b-second-img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: url('../imgs/b-second-img.png') no-repeat center center/cover;
+            width: 241px;
+            height: 162px;
+            border-radius: 9px;
+            z-index: 2;
+        }
+    }
+
+    .section-b-cont-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .section-b-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .section-b-text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 14px;
+            line-height: 22px;
+            color: #676767;
+        }
+    }
+
+    .section-b-blocks {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .section-b-block {
+        border-radius: 5px;
+        width: 47%;
+        padding: 15px;
+        background: #fff;
+        box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+
+    .section-b-block-item {
+        background-color: #00730C;
+        border-radius: 40px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-b-block-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .section-b-block-img-1 {
+        background: url('../imgs/b-icon-1.svg') no-repeat center center/cover;
+    }
+
+    .section-b-block-img-2 {
+        background: url('../imgs/b-icon-2.svg') no-repeat center center/cover;
+    }
+
+    .section-b-block-img-3 {
+        background: url('../imgs/b-icon-3.svg') no-repeat center center/cover;
+    }
+
+    .section-b-block-img-4 {
+        background: url('../imgs/b-icon-4.svg') no-repeat center center/cover;
+    }
+
+    .section-b-btn {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 30px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        background-color: #00730C;
+    }
+}
+
+
+
 // ---------------------------TABLET---------------------------
 @media(min-width: 768px) {
     .container {
@@ -579,6 +724,84 @@ h1 {
             }
         }
     }
+
+    // ---------------------------SECTION-B---------------------------
+    .section-b {
+        .row {
+            flex-direction: column;
+            gap: 27px;
+            width: 100%;
+        }
+        .b-imgs-container {
+            width: 680px;
+            height: 903px;
+    
+            .b-green-bg {
+                width: 450px;
+                height: 706px;
+            }
+            .b-main-img {
+                top: 36px;
+                left: 24px;
+                width: 601px;
+                height: 741px;
+            }
+            .b-second-img {
+                width: 456px;
+                height: 306px;
+            }
+        }
+        .section-b-cont-btn {
+            align-items: center;
+            gap: 50px;
+            width: 70%;
+        }
+        .section-b-content {
+            gap: 50px;
+        }
+        .section-b-text {
+            gap: 30px;
+    
+            h1 {
+                text-align: start;
+                font-size: 45px;
+                font-weight: 800;
+            }
+            p {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+        .section-b-blocks {
+            width: 100%;
+            gap: 30px;
+        }
+        .section-b-block {
+            width: 47%;
+            padding: 15px 30px;
+            background: #fff;
+            flex-direction: row;
+            gap: 30px;
+    
+            p {
+                font-size: 24px;
+            }
+        }
+        .section-b-block-item {
+            border-radius: 67px;
+            width: 67px;
+            height: 67px;
+        }
+        .section-b-block-img {
+            width: 50px;
+            height: 50px;
+        }
+        .section-b-btn {
+            padding: 13px 35px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
 }
 
 
@@ -677,11 +900,28 @@ h1 {
         }
     }
 
+    // ---------------------------SECTION-A---------------------------
     .section-a {
         .section-a-content {
             .section-a-item {
                 width: 23%;
             }
+        }
+    }
+
+    // ---------------------------SECTION-B---------------------------
+    .section-b {
+        .row {
+            flex-direction: row;
+        }
+        .section-b-cont-btn {
+            align-items: baseline;
+            width: 49%;
+        }
+        .section-b-block-item {
+            border-radius: 67px;
+            width: 67px;
+            height: 67px;
         }
     }
 }
