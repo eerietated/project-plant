@@ -504,6 +504,7 @@ h1 {
 .section-c {
     background: #0C4B35;
     position: relative;
+    overflow: hidden;
     .container {
         padding: 50px 0;
     }
@@ -518,9 +519,9 @@ h1 {
     .section-c-bg-img-2 {
         position: absolute;
         top: -20px;
-        right: -25px;
+        right: 0;
         background: url('../imgs/c-bg-img-2.png') no-repeat center;
-        width: 199.655px;
+        width: 100px;
         height: 196.499px;
     }
     .row {
@@ -844,7 +845,6 @@ h1 {
         .row {
             flex-direction: column;
             gap: 27px;
-            width: 100%;
         }
         .b-imgs-container {
             width: 680px;
