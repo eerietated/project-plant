@@ -535,6 +535,102 @@ h1 span {
   background-color: #00730C;
 }
 
+.section-d .container {
+  padding: 0;
+}
+.section-d .row {
+  flex-direction: column;
+  gap: 30px;
+}
+.section-d .section-d-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.section-d .section-d-head h1 {
+  text-transform: capitalize;
+}
+.section-d .section-d-head p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+}
+.section-d .section-d-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.section-d .section-d-content .section-d-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 20px 31px 20px 20px;
+  background: linear-gradient(171deg, #FFF 0%, #FFF 100%);
+  box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+}
+.section-d .section-d-content .d-item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  z-index: 1;
+}
+.section-d .section-d-content .d-item-text h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.section-d .section-d-content .d-item-text p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+}
+.section-d .section-d-content .d-img-container {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-d .section-d-content .bg-d-img {
+  position: absolute;
+  right: 30px;
+  background: url("../imgs/d-bg-img.svg") no-repeat center;
+  background-size: contain;
+  height: 111.893px;
+  width: 76.227px;
+  z-index: 0;
+}
+.section-d .section-d-content .d-img {
+  width: 50px;
+  height: 50px;
+}
+.section-d .section-d-content .d-img-1 {
+  background: url("../imgs/d-icon-1.svg") no-repeat center center/cover;
+}
+.section-d .section-d-content .d-img-2 {
+  background: url("../imgs/d-icon-2.svg") no-repeat center center/cover;
+}
+.section-d .section-d-content .d-img-3 {
+  background: url("../imgs/d-icon-3.svg") no-repeat center center/cover;
+}
+.section-d .section-d-content .d-img-4 {
+  background: url("../imgs/d-icon-4.svg") no-repeat center center/cover;
+}
+.section-d .section-d-content .d-num {
+  color: #E3E3E3;
+  font-size: 45px;
+  font-weight: 800;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 1200px;
@@ -844,6 +940,65 @@ h1 span {
     line-height: 24px;
     z-index: 1;
   }
+  .section-d .row {
+    gap: 50px;
+  }
+  .section-d .section-d-head {
+    gap: 20px;
+  }
+  .section-d .section-d-head h1 {
+    font-size: 45px;
+    font-weight: 800;
+  }
+  .section-d .section-d-head p {
+    font-size: 18px;
+    line-height: 30px;
+    width: 85%;
+  }
+  .section-d .section-d-content {
+    align-items: center;
+    gap: 30px;
+  }
+  .section-d .section-d-content .section-d-item {
+    gap: 35px;
+    width: 40%;
+    padding: 50px 29px 70px 29px;
+    background: linear-gradient(171deg, #FFF 0%, #FFF 100%);
+    box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+  }
+  .section-d .section-d-content .section-d-item-1 {
+    background: #00730C;
+    color: #FFF;
+  }
+  .section-d .section-d-content .section-d-item-1 p {
+    color: #FFF;
+  }
+  .section-d .section-d-content .d-item-text h3 {
+    font-size: 24px;
+  }
+  .section-d .section-d-content .d-item-text p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .section-d .section-d-content .bg-d-img {
+    right: 30px;
+    height: 161.801px;
+    width: 95.1px;
+  }
+  .section-d .section-d-content .d-img {
+    width: 70px;
+    height: 70px;
+  }
+  .section-d .section-d-content .d-img-1 {
+    background: url("../imgs/Desktop-app/d-icon-1-white.svg") no-repeat center center/cover;
+  }
+  .section-d .section-d-content .d-num {
+    font-size: 78px;
+  }
+  .section-d .section-d-content .d-num-1 {
+    text-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #fff;
+  }
 }
 @media (min-width: 1410px) {
   main {
@@ -934,6 +1089,9 @@ h1 span {
   }
   .section-c .section-c-blocks {
     gap: 20px 120px;
+  }
+  .section-d .section-d-content .section-d-item {
+    width: 23%;
   }
 }
 @media (min-width: 1710px) {
