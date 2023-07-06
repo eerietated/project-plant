@@ -723,6 +723,76 @@ h1 {
     }
 }
 
+// ---------------------------SECTION-E---------------------------
+.section-e {
+    .container {
+        padding: 0;
+    }
+
+    .row {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-e-container {
+        background: url('../imgs/Mobile-app/e-bg-img-small.png') no-repeat center center/cover;
+        border-radius: 5px;
+        width: 100%;
+        min-height: 224px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-e-placeholder {
+        background: rgba($color: #C4C4C4, $alpha: 0.2);
+        width: 100%;
+        min-height: 224px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-e-content {
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin: 0 30px;
+        width: 100%;
+
+        .e-text {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .e-call-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #00730C;
+        background-color: #fff;
+        gap: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 35px;
+        box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.15);
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}
 
 
 // ---------------------------TABLET---------------------------
@@ -1104,81 +1174,118 @@ h1 {
         }
     }
 
-        // ---------------------------SECTION-D---------------------------
-.section-d {
-    .row {
-        gap: 50px;
-    }
-
-    .section-d-head {
-        gap: 20px;
-        h1 {
-            font-size: 45px;
-            font-weight: 800;
-        }
-        p {
-            font-size: 18px;
-            line-height: 30px;
-            width: 85%;
-        }
-    }
-
-    .section-d-content {
-        align-items: center;
-        gap: 30px;
-
-        .section-d-item {
-            gap: 35px;
-            width: 40%;
-            padding: 50px 29px 70px 29px;
-            background: linear-gradient(171deg, #FFF 0%, #FFF 100%);
-            box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+    // ---------------------------SECTION-D---------------------------
+    .section-d {
+        .row {
+            gap: 50px;
         }
 
-        .section-d-item-1 {
-            background: #00730C;
-            color: #FFF;
-
+        .section-d-head {
+            gap: 20px;
+            h1 {
+                font-size: 45px;
+                font-weight: 800;
+            }
             p {
+                font-size: 18px;
+                line-height: 30px;
+                width: 85%;
+            }
+        }
+
+        .section-d-content {
+            align-items: center;
+            gap: 30px;
+
+            .section-d-item {
+                gap: 35px;
+                width: 40%;
+                padding: 50px 29px 70px 29px;
+                background: linear-gradient(171deg, #FFF 0%, #FFF 100%);
+                box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+            }
+
+            .section-d-item-1 {
+                background: #00730C;
                 color: #FFF;
+
+                p {
+                    color: #FFF;
+                }
             }
-        }
 
-        .d-item-text {
-            h3 {
-                font-size: 24px;
+            .d-item-text {
+                h3 {
+                    font-size: 24px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
             }
-            p {
-                font-size: 16px;
-                line-height: 28px;
+
+            .bg-d-img {
+                right: 30px;
+                height: 161.801px;
+                width: 95.1px;
             }
-        }
 
-        .bg-d-img {
-            right: 30px;
-            height: 161.801px;
-            width: 95.1px;
-        }
+            .d-img {
+                width: 70px;
+                height: 70px;
+            }
 
-        .d-img {
-            width: 70px;
-            height: 70px;
-        }
+            .d-img-1 {
+                background: url('../imgs/Desktop-app/d-icon-1-white.svg') no-repeat center center/cover;
+            }
+            
+            .d-num {
+                font-size: 78px;
+            }
 
-        .d-img-1 {
-            background: url('../imgs/Desktop-app/d-icon-1-white.svg') no-repeat center center/cover;
-        }
-        
-        .d-num {
-            font-size: 78px;
-        }
-
-        .d-num-1 {
-            text-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.15);
-            color: #fff;
+            .d-num-1 {
+                text-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.15);
+                color: #fff;
+            }
         }
     }
-}
+
+    // ---------------------------SECTION-E---------------------------
+    .section-e {
+        .section-e-container {
+            background: url('../imgs/Desktop-app/e-bg-img-big.png') no-repeat center center/cover;
+            min-height: 247px;
+        }
+
+        .section-e-placeholder {
+            min-height: 247px;
+        }
+
+        .section-e-content {
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 40px;
+
+            .e-text {
+                font-size: 33px;
+                text-align: start;
+                display: flex;
+                flex-wrap: wrap;
+                width: 448px;
+            }
+        }
+
+        .e-call-btn {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
 }
 
 
@@ -1326,6 +1433,13 @@ h1 {
             .section-d-item {
                 width: 23%;
             }
+        }
+    }
+
+    // ---------------------------SECTION-E---------------------------
+    .section-e {
+        .section-e-content {
+            gap: 85px;
         }
     }
 }

@@ -631,6 +631,66 @@ h1 span {
   font-weight: 800;
 }
 
+.section-e .container {
+  padding: 0;
+}
+.section-e .row {
+  align-items: center;
+  justify-content: center;
+}
+.section-e .section-e-container {
+  background: url("../imgs/Mobile-app/e-bg-img-small.png") no-repeat center center/cover;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-e .section-e-placeholder {
+  background: rgba(196, 196, 196, 0.2);
+  width: 100%;
+  min-height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-e .section-e-content {
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 30px;
+  width: 100%;
+}
+.section-e .section-e-content .e-text {
+  font-size: 20px;
+  text-align: center;
+}
+.section-e .e-call-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #00730C;
+  background-color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 35px;
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.section-e .e-call-btn img {
+  width: 20px;
+  height: 20px;
+}
+.section-e .e-call-btn p {
+  text-align: center;
+  font-size: 14px;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 1200px;
@@ -999,6 +1059,32 @@ h1 span {
     text-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #fff;
   }
+  .section-e .section-e-container {
+    background: url("../imgs/Desktop-app/e-bg-img-big.png") no-repeat center center/cover;
+    min-height: 247px;
+  }
+  .section-e .section-e-placeholder {
+    min-height: 247px;
+  }
+  .section-e .section-e-content {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+  .section-e .section-e-content .e-text {
+    font-size: 33px;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    width: 448px;
+  }
+  .section-e .e-call-btn img {
+    width: 30px;
+    height: 30px;
+  }
+  .section-e .e-call-btn p {
+    font-size: 18px;
+  }
 }
 @media (min-width: 1410px) {
   main {
@@ -1092,6 +1178,9 @@ h1 span {
   }
   .section-d .section-d-content .section-d-item {
     width: 23%;
+  }
+  .section-e .section-e-content {
+    gap: 85px;
   }
 }
 @media (min-width: 1710px) {
