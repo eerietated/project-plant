@@ -294,6 +294,23 @@ h1 {
             box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
         }
 
+        .section-a-item:hover {
+            background: #00730C;
+            color: #FFF;
+
+            p {
+                color: #FFF;
+            }
+
+            .a-img {
+                background-color: #FFF;
+            }
+
+            .bg-a-img {
+                opacity: 0.2;
+            }
+        }
+
         .a-item-text {
             display: flex;
             flex-direction: column;
@@ -328,31 +345,32 @@ h1 {
         .a-img {
             width: 50px;
             height: 50px;
+            background-color: #00730C;
         }
 
         .a-img-1 {
-            background: url('../imgs/Mobile-app/A-icon-1.svg') no-repeat center center/cover;
+            mask: url('../imgs/Mobile-app/A-icon-1.svg') no-repeat center center/cover;
         }
         .a-img-2 {
-            background: url('../imgs/Mobile-app/A-icon-2.svg') no-repeat center center/cover;
+            mask: url('../imgs/Mobile-app/A-icon-2.svg') no-repeat center center/cover;
         }
         .a-img-3 {
-            background: url('../imgs/Mobile-app/A-icon-3.svg') no-repeat center center/cover;
+            mask: url('../imgs/Mobile-app/A-icon-3.svg') no-repeat center center/cover;
         }
         .a-img-4 {
-            background: url('../imgs/Mobile-app/A-icon-4.svg') no-repeat center center/cover;
+            mask: url('../imgs/Mobile-app/A-icon-4.svg') no-repeat center center/cover;
         }
         .a-img-5 {
-            background: url('../imgs/Mobile-app/A-icon-5.svg') no-repeat center center/cover;
+            mask: url('../imgs/Mobile-app/A-icon-5.svg') no-repeat center center/cover;
         }
         .a-img-6 {
-            background: url('../imgs/Mobile-app/A-icon-6.svg') no-repeat center center/cover;
+            mask: url('../imgs/Mobile-app/A-icon-6.svg') no-repeat center center/cover;
         }
         .a-img-7 {
-            background: url('../imgs/Mobile-app/A-icon-7.svg') no-repeat center center/cover;
+            mask: url('../imgs/Mobile-app/A-icon-7.svg') no-repeat center center/cover;
         }
         .a-img-8 {
-            background: url('../imgs/Mobile-app/A-icon-8.svg') no-repeat center center/cover;
+            mask: url('../imgs/Mobile-app/A-icon-8.svg') no-repeat center center/cover;
         }
     }
 }
@@ -661,6 +679,23 @@ h1 {
             box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
         }
 
+        .section-d-item:hover {
+            background: #00730C;
+            color: #FFF;
+
+            p {
+                color: #FFF;
+            }
+
+            .d-img {
+                background-color: #FFF;
+            }
+
+            .bg-d-img {
+                background-color: #FFF;
+            }
+        }
+
         .d-item-text {
             display: flex;
             flex-direction: column;
@@ -690,7 +725,8 @@ h1 {
         .bg-d-img {
             position: absolute;
             right: 30px;
-            background: url('../imgs/d-bg-img.svg') no-repeat center;
+            mask: url('../imgs/d-bg-img.svg') no-repeat center;
+            background-color: #00730C;
             background-size: contain;
             height: 111.893px;
             width: 76.227px;
@@ -700,19 +736,20 @@ h1 {
         .d-img {
             width: 50px;
             height: 50px;
+            background-color: #00730C;
         }
 
         .d-img-1 {
-            background: url('../imgs/d-icon-1.svg') no-repeat center center/cover;
+            mask: url('../imgs/d-icon-1.svg') no-repeat center center/cover;
         }
         .d-img-2 {
-            background: url('../imgs/d-icon-2.svg') no-repeat center center/cover;
+            mask: url('../imgs/d-icon-2.svg') no-repeat center center/cover;
         }
         .d-img-3 {
-            background: url('../imgs/d-icon-3.svg') no-repeat center center/cover;
+            mask: url('../imgs/d-icon-3.svg') no-repeat center center/cover;
         }
         .d-img-4 {
-            background: url('../imgs/d-icon-4.svg') no-repeat center center/cover;
+            mask: url('../imgs/d-icon-4.svg') no-repeat center center/cover;
         }
         
         .d-num {
@@ -974,15 +1011,6 @@ h1 {
                 padding: 60px 40px;
                 align-items: center;
             }
-
-            .section-a-item-1 {
-                background: #00730C;
-                color: #FFF;
-
-                p {
-                    color: #FFF;
-                }
-            }
     
             .a-item-text {
                 align-items: center;
@@ -1002,18 +1030,10 @@ h1 {
                 width: 176px;
                 height: 176px;
             }
-
-            .bg-a-img-1 {
-                opacity: 0.2;
-            }
     
             .a-img {
                 width: 70px;
                 height: 70px;
-            }
-    
-            .a-img-1 {
-                background: url('../imgs/Desktop-app/A-icon-1-white.svg') no-repeat center;
             }
         }
     }
@@ -1205,15 +1225,6 @@ h1 {
                 box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
             }
 
-            .section-d-item-1 {
-                background: #00730C;
-                color: #FFF;
-
-                p {
-                    color: #FFF;
-                }
-            }
-
             .d-item-text {
                 h3 {
                     font-size: 24px;
@@ -1234,18 +1245,10 @@ h1 {
                 width: 70px;
                 height: 70px;
             }
-
-            .d-img-1 {
-                background: url('../imgs/Desktop-app/d-icon-1-white.svg') no-repeat center center/cover;
-            }
             
             .d-num {
                 font-size: 78px;
-            }
-
-            .d-num-1 {
                 text-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.15);
-                color: #fff;
             }
         }
     }
